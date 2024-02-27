@@ -1,0 +1,513 @@
+  {
+  color: white; 
+  -webkit-text-stroke: 0.3px white; /* Контур текста */
+}
+body {
+  color: white;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.wheel-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 0;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+
+nav ul li a:hover {
+  color: #white;
+}
+
+/* Стиль для раздела "Найдите свой автомобиль" */
+
+.promo {
+  background-image: url(".png");
+  text-align: center;
+  padding: 50px;
+}
+
+.promo h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.promo form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.promo input[type="text"] {
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+input[type="text"] {
+  background-color: #ccc;
+  color: #333;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:hover {
+  background-color: #fff;
+  color: #333;
+}
+.promo button {
+  background-color: #FFFFFF
+  color: #333;
+  border: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.promo button:hover {
+  background-color: #333;
+  color: #FFFFFF
+}
+
+/* Стиль для раздела "Популярные автомобили" */
+
+.featured-cars {
+  background-image: url(".png");
+  text-align: center;
+  padding: 50px;
+}
+
+.featured-cars h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+   color: white;
+}
+
+.featured-cars ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.featured-cars li {
+  margin: 0 20px;
+}
+.featured-cars li:hover {
+  background-color: #white;
+}
+
+.featured-cars li:hover h3,
+.featured-cars li:hover p {
+  color: white;
+}
+
+.featured-cars img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.featured-cars img:hover {
+  transform: scale(1.05);
+}
+
+.featured-cars h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #FFFFF;
+}
+
+.featured-cars p {
+  margin: 0;
+  font-size: 1.2em;
+  color: #white
+
+body 
+  background-image: url('.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  background: url("fon69.png") no-repeat center center fixed;
+  background-size: cover;
+}
+body {
+  color: #white; 
+}
+.promo body:hover {
+  background-color: #333;
+  color: #FFFFFF
+}
+.wheel-button {
+  position: absolute; /* Измените позиционирование на absolute */
+  top: 10%; /* Разместите колесо по вертикали в центре шапки */
+  transform: translateY(-27%); /* Переместите колесо вверх на половину своей высоты */
+  right: 13px; /* Установите правый отступ для колеса */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.wheel-button img {
+  max-width: 100%;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.wheel-button .button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.wheel-button:hover .button-text {
+  opacity: 1;
+}
+
+.wheel-button:hover img {
+  filter: brightness(0.7);
+}
+
+.wheel-button:hover img {
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.login-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-popup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-popup input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.login-popup button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #0099cc;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+img {
+  width: 130px;
+  height: 130px;
+}
+
+/* Дополнительный код */
+.wheel-button {
+  background-color: # /* Зеленый цвет */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button-text {
+  margin-left: 5px;
+}
+
+/* Стили для формы входа */
+.modal input[type=text],
+.modal input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.modal label {
+  font-weight: bold;
+}
+.logo img {
+  width: 250px; 
+  height: 150%; 
+}
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-left h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-address {
+  margin-bottom: 6px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-company-name {
+  color: #bbb;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.footer-center i {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #bbb;
+}
+
+.footer-center p {
+  display: inline-block;
+  margin: 0;
+  color: #bbb;
+}
+
+.footer-right .footer-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right .footer-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-right .footer-icons img {
+  width: 45px;
+  height: 45px;
+  transition: opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+.footer-right .footer-icons img:hover {
+  opacity: 1;
+}
+.card {
+  display: flex;
+  height: 70px;
+  width: 270px;
+}
+
+.card svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+  background-color: #00ccff;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+  background-color: #5865f2;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+  background-color: #12a50b;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+a {
+  text-decoration: none; /* Убирает подчеркивание текста */
+  color: inherit; /* Наследует цвет текста от родительского элемента */
+}
+
+a:hover {
+  text-decoration: none; /* Убирает подчеркивание текста при наведении */
+  color: inherit; /* Наследует цвет текста от родительского элемента при наведении */
+}
