@@ -1,0 +1,59 @@
+.hat {
+  /* h-m */
+
+position: absolute;
+width: 80%;
+height: 72px;
+left: 280px;
+top: 0px;
+
+background: #FCFCFC;
+border-radius: 0px 0px 10px 10px;
+
+display: flex;
+justify-content: space-between;
+
+}
+
+.hat_items {
+  display: flex;
+}
+
+aside{
+	/* menu */
+
+position: absolute;
+width: 260px;
+height: 900px;
+left: 0px;
+top: 0px;
+
+background: #FCFCFC;
+border-radius: 0px;
+
+}
+
+aside img, button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+iframe {
+	/* Maps / Full Map */
+
+position: unset;
+  width: 1468px;
+  height: 900px;
+  right: 0px;
+  top: calc(50% - 900px/2);
+  background: #FFFFFF;
+  width: 100%;
+
+}
+
+.company_owner_ {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
